@@ -1,0 +1,44 @@
+(
+    n1<
+        (,)
+        (f'f n1-rep')?'
+)rep,
+
+(
+    1-n0<
+        (,1!)
+        (x=
+            ((,)n rep'n)
+            (x n dig')?'
+        )?'
+)dig,
+
+(c,"0123456789"c10dig')int,
+
+(
+    n1<
+        ()
+        (x,n1-kick'y,x y)?'
+)kick,
+
+(
+    n,0
+    (
+        i n=
+            ()
+            (i kick'i1+f')?'
+    )f'
+)rev,
+
+(
+    n1<
+        (,)
+        (f'x,f n1-map'x)?'
+)map,
+
+("TODO: under (apply fn, but not to top value)"),
+
+(n rev'(:)n map'(,)n rep')print,
+
+"Digit?"#print'(n1<(,)(f'x,f n1-map'x)?')map,
+;int'
